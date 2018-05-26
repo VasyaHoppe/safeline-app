@@ -6,12 +6,19 @@ body {
   font-size: 12px;
 }
 
-#mainCarousel {
-  .carousel-caption {
-    background: #333; /* Цвет фона под заголовком */
-    padding: 2px; 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  #mainCarousel {
+    .carousel-caption {
+      background: #333; /* Цвет фона под заголовком */
+      padding: 2px; 
+    }
   }
 }
+
+
 
 .container {
   max-width: 960px;
