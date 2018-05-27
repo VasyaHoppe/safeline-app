@@ -8,7 +8,7 @@
     "start": "gulp run",
     "build": "gulp build"
   },
-  "author": "Mikita Isakau",
+  "author": "Darya Zankevich",
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",

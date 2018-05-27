@@ -18,17 +18,33 @@
 <body>
     <!-- Header component -->
     <header>
-        <nav class="site-header sticky-top py-1">
-            <div class="container d-flex flex-column flex-md-row justify-content-between">
-                <a class="py-2" href="#">
-                    <i class="large material-icons align-middle">security</i>
-                    <span class="align-middle logo-name">Линия безопасности</span>
-                </a>
-                <a class="py-2 d-none d-md-inline-block" href="#/main">Главная</a>
-                <a class="py-2 d-none d-md-inline-block" href="#/services">Услуги</a>
-                <a class="py-2 d-none d-md-inline-block" href="#/licenses">Лицензия</a>
-                <a class="py-2 d-none d-md-inline-block" href="#/contacts">Контакты</a>
-                <a class="py-2 d-none d-md-inline-block" href="#/about">О нас</a>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">
+                <i class="large material-icons align-middle">security</i>
+                <span class="align-middle logo-name">Линия безопасности</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/main">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/services">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/licenses">Лицензии</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/contacts">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/about">О нас</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -93,8 +109,8 @@
         </div>
 
         <!-- Changeable content -->
-        <div id="change" class="container"></div>
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div id="mainContent" class="container"></div>
+        <!-- <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
             <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
                 <div class="my-3 py-3">
                     <h2 class="display-5">Another headline</h2>
@@ -160,7 +176,7 @@
                 </div>
                 <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- Footer component -->
@@ -225,4 +241,5 @@
         crossorigin="anonymous"></script>
     <script src="build/bundle.js"></script>
 </body>
+
 </html>
