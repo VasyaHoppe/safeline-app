@@ -12,8 +12,16 @@ const routes = {
     'support': 'templates/support.html',
     'modernize': 'templates/modernize.html',
     'licenses': 'templates/licenses.html',
-    'contacts': 'templates/main.html',
-    'about': 'templates/main.html',
+
+    'alert': 'templates/must-know/alert.html',
+    'defense': 'templates/must-know/defense.html',
+    'pavilion': 'templates/must-know/pavilion.html',
+    'service': 'templates/must-know/service.html',
+
+    'company': 'templates/must-know/company.html',
+    'belarus': 'templates/must-know/belarus.html',
+    'building': 'templates/must-know/building.html',
+    'using': 'templates/must-know/using.html'
 };
 
 const mainContentDiv = document.querySelector('#mainContent');
