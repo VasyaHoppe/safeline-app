@@ -7,10 +7,10 @@ const routes = {
     '': 'templates/main.html',
     'main': 'templates/main.html',
     'services': 'templates/main.html',
-    'installation': 'templates/main.html',
-    'debug': 'templates/main.html',
-    'support': 'templates/main.html',
-    'modernize': 'templates/main.html',
+    'installation': 'templates/installation.html',
+    'debug': 'templates/debug.html',
+    'support': 'templates/support.html',
+    'modernize': 'templates/modernize.html',
     'licenses': 'templates/licenses.html',
     'contacts': 'templates/main.html',
     'about': 'templates/main.html',
@@ -20,6 +20,11 @@ const mainContentDiv = document.querySelector('#mainContent');
 
 const sleeper = ms => x => new Promise(resolve => setTimeout(() => resolve(x), ms));
 const loadToMain = content => mainContentDiv.innerHTML = content;
+const getRoute = () =>  {
+    const { location: { hash = '' } } = window;
+    return routes[hash.substr(2, (hash.length - 1))];
+};
+
 
 const loadTemplate = (url = '') => loadSpinner()
     .then(sleeper(2000))
@@ -37,8 +42,8 @@ const loadSpinner = async () => {
 };
 
 const loadByRoute =
-    ({ location: { hash = '' } }) => loadTemplate(routes[hash.substr(2, (hash.length - 1))]);
+    ({ location: { hash = '' } }) => loadTemplate(getRoute());
 
 // After init application, need to load main page
-loadTemplate(routes['']);
+loadTemplate(getRoute());
 window.addEventListener("hashchange", ({ target }) => loadByRoute(target), false);
