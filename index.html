@@ -32,8 +32,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#/main">Главная</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#/services">Услуги</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Услуги
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="serviceDropdown">
+                            <a class="dropdown-item" href="#/installation">Монтаж пожарной сигнализации</a>
+                            <a class="dropdown-item" href="#/debug">Наладка пожарной сигнализации</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#/support">Техобслуживание пожарной сигнализации</a>
+                            <a class="dropdown-item" href="#/modernize">Модернизация пожарной сигнализации</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#/licenses">Лицензии</a>
@@ -56,6 +65,7 @@
                 <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#mainCarousel" data-slide-to="1"></li>
                 <li data-target="#mainCarousel" data-slide-to="2"></li>
+                <li data-target="#mainCarousel" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
